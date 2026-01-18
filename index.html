@@ -1,350 +1,266 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Coin Laundry Business | Graphic Record</title>
+  <meta charset="UTF-8">
+  <title>Coin Laundry Business Comparison | 個人 vs FC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Arial Rounded MT Bold", sans-serif;
-  background: #f6f6f6;
-  color: #222;
-  padding: 24px;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
+    h1, h2, h3 {
+      margin: 0 0 0.5em 0;
+    }
 
-.header {
-  background: #fff;
-  border: 3px solid #000;
-  border-radius: 22px;
-  padding: 22px;
-  margin-bottom: 32px;
-  box-shadow: 5px 5px 0 #ccc;
-}
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-.header h1 {
-  margin: 0;
-  font-size: 28px;
-}
+    /* ===== Header / Assumptions ===== */
+    header {
+      background: #fff3b0;
+      border: 3px solid #222;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 4px 4px 0 #ccc;
+    }
 
-.header p {
-  margin: 6px 0 0;
-  color: #555;
-}
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 26px;
-}
+    .assumptions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
 
-.card {
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 20px;
-  padding: 18px;
-  box-shadow: 4px 4px 0 #ccc;
-}
+    .assumption-box {
+      background: #ffffff;
+      border: 2px solid #222;
+      border-radius: 14px;
+      padding: 14px;
+    }
 
-.card-title {
-  background: #ffe066;
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 22px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
+    .assumption-box strong {
+      font-size: 15px;
+    }
 
-.box {
-  border: 2px dashed #000;
-  border-radius: 18px;
-  padding: 12px;
-  margin-top: 10px;
-}
+    .assumption-box span {
+      display: block;
+      font-size: 13px;
+      color: #555;
+      margin-top: 4px;
+    }
 
-.box h3 {
-  margin: 0 0 6px;
-  background: #000;
-  color: #fff;
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 14px;
-}
+    /* ===== Card Layout ===== */
+    .card {
+      background: #ffffff;
+      border: 3px solid #222;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 4px 4px 0 #ccc;
+    }
 
-ul {
-  margin: 6px 0 0;
-  padding-left: 18px;
-}
+    .card-title {
+      background: #222;
+      color: #fff;
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
 
-.note {
-  background: #ffe066;
-  border-radius: 18px;
-  padding: 10px 14px;
-  margin-top: 12px;
-  font-weight: bold;
-}
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
 
-.en {
-  display: block;
-  font-size: 12px;
-  color: #555;
-  margin-top: 4px;
-}
+    .bubble {
+      background: #fff3b0;
+      border: 2px solid #222;
+      border-radius: 20px;
+      padding: 16px;
+    }
 
-.footer {
-  margin-top: 36px;
-  background: #000;
-  color: #fff;
-  padding: 26px;
-  border-radius: 22px;
-}
+    .bubble h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
 
-.footer span {
-  color: #ffe066;
-  font-weight: bold;
-}
+    .bubble ul {
+      padding-left: 18px;
+      margin: 0;
+    }
 
-.arrow {
-  text-align: center;
-  font-size: 20px;
-  margin: 8px 0;
-}
-</style>
+    .bubble li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .en {
+      color: #555;
+      font-size: 13px;
+    }
+
+    /* ===== Size Table ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th, td {
+      border: 2px solid #222;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background: #eee;
+    }
+
+    /* ===== Footer Note ===== */
+    .note {
+      background: #f0f0f0;
+      border-left: 6px solid #222;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-<!-- HEADER -->
-<div class="header">
-  <h1>🧺 コインランドリービジネス比較（大田区想定）</h1>
-  <p>Coin Laundry Business Comparison (Tokyo, Ota-ku)</p>
-  <p class="en">Store size: 20–30 sqm / Almost zero initial cash</p>
-</div>
+    <!-- ===== Header ===== -->
+    <header>
+      <h1>Coin Laundry Business Comparison<br>
+        <span class="en">Individual Owner vs Franchise Model</span>
+      </h1>
 
-<div class="grid">
+      <div class="assumptions">
+        <div class="assumption-box">
+          📍 <strong>立地 / Location</strong>
+          <span>東京都大田区（住宅密集エリア）<br>Ota Ward, Tokyo (Residential Area)</span>
+        </div>
 
-<!-- ① INITIAL COST -->
-<div class="card">
-  <div class="card-title">① 初期投資額 / Initial Investment</div>
+        <div class="assumption-box">
+          📐 <strong>店舗サイズ / Store Size</strong>
+          <span>20〜30坪（約66〜99㎡）<br>20–30 tsubo (≈66–99 sqm)</span>
+        </div>
 
-  <div class="box">
-    <h3>個人開業 / Independent</h3>
-    <ul>
-      <li>約2,000万〜3,000万円</li>
-      <li>設備・内装は自由</li>
-    </ul>
-    <span class="en">Approx. ¥20–30M, flexible equipment & design</span>
+        <div class="assumption-box">
+          💰 <strong>資金条件 / Capital</strong>
+          <span>自己資金ほぼゼロ・融資前提<br>Almost no equity, loan-based</span>
+        </div>
+
+        <div class="assumption-box">
+          🏙️ <strong>事業モデル / Model</strong>
+          <span>副業・小規模投資<br>Side business / Small investment</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Store Size Explanation ===== -->
+    <section class="card">
+      <div class="card-title">店舗サイズと機器構成 / Store Size & Equipment</div>
+
+      <table>
+        <tr>
+          <th>規模</th>
+          <th>面積</th>
+          <th>機器構成イメージ</th>
+        </tr>
+        <tr>
+          <td>20坪</td>
+          <td>約66㎡</td>
+          <td>
+            洗濯乾燥機 3〜4台<br>
+            乾燥機 4〜6口
+            <div class="en">Minimum viable setup</div>
+          </td>
+        </tr>
+        <tr>
+          <td>25坪</td>
+          <td>約83㎡</td>
+          <td>
+            洗濯乾燥機（大型3＋中型2）<br>
+            乾燥機 6〜8口
+            <div class="en">Standard & balanced model</div>
+          </td>
+        </tr>
+        <tr>
+          <td>30坪</td>
+          <td>約99㎡</td>
+          <td>
+            洗濯乾燥機 6〜7台<br>
+            乾燥機 8〜10口
+            <div class="en">Higher capacity & comfort</div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ===== Explanation Bubbles ===== -->
+    <section class="card">
+      <div class="card-title">サイズ感の考え方 / How to Read the Size</div>
+
+      <div class="two-column">
+        <div class="bubble">
+          <h3>個人開業向き</h3>
+          <ul>
+            <li>25坪前後が現実的</li>
+            <li>初期投資と収益のバランスが良い</li>
+          </ul>
+          <div class="en">
+            Around 25 tsubo is optimal for individual owners.
+          </div>
+        </div>
+
+        <div class="bubble">
+          <h3>投資家視点</h3>
+          <ul>
+            <li>㎡ × 機器台数 × 回転率で評価</li>
+            <li>拡張・複数店舗を前提に考える</li>
+          </ul>
+          <div class="en">
+            Investors focus on sqm × capacity × turnover.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Note ===== -->
+    <div class="note">
+      このサイトは「小規模・現実的・融資前提」のコインランドリービジネスを、  
+      日本人および英語圏投資家の双方に直感的に伝えることを目的としています。  
+      <br>
+      <span class="en">
+        This site visualizes a conservative, loan-based coin laundry model for both Japanese and global investors.
+      </span>
+    </div>
+
   </div>
-
-  <div class="box">
-    <h3>フランチャイズ / Franchise</h3>
-    <ul>
-      <li>約2,500万〜3,500万円</li>
-      <li>加盟金・指定設備あり</li>
-    </ul>
-    <span class="en">Approx. ¥25–35M incl. franchise fee</span>
-  </div>
-
-  <div class="note">
-    個人はコスト調整可能 / FCは高め
-    <span class="en">Independent is cheaper, franchise costs more</span>
-  </div>
-</div>
-
-<!-- ② BREAKDOWN -->
-<div class="card">
-  <div class="card-title">② 初期費用内訳 / Cost Breakdown</div>
-
-  <div class="box">
-    <h3>個人 / Independent</h3>
-    <ul>
-      <li>洗濯乾燥機・乾燥機</li>
-      <li>内装・給排水・電気工事</li>
-      <li>両替機・防犯カメラ</li>
-    </ul>
-    <span class="en">Machines, interior, utilities, security</span>
-  </div>
-
-  <div class="box">
-    <h3>FC / Franchise</h3>
-    <ul>
-      <li>上記すべて</li>
-      <li>加盟金・指定設計</li>
-    </ul>
-    <span class="en">Above + franchise fee & fixed specs</span>
-  </div>
-
-  <div class="note">
-    自由度 vs おまかせ
-    <span class="en">Freedom vs Turnkey</span>
-  </div>
-</div>
-
-<!-- ③ OPERATION -->
-<div class="card">
-  <div class="card-title">③ 運営の手間 / Operation Effort</div>
-
-  <div class="box">
-    <h3>個人 / Independent</h3>
-    <ul>
-      <li>清掃・集金・対応を自分で実施</li>
-      <li>判断はすべて自己責任</li>
-    </ul>
-    <span class="en">Hands-on operation & decisions</span>
-  </div>
-
-  <div class="box">
-    <h3>FC / Franchise</h3>
-    <ul>
-      <li>マニュアル完備</li>
-      <li>サポート窓口あり</li>
-    </ul>
-    <span class="en">Manuals and support provided</span>
-  </div>
-
-  <div class="note">
-    手間：個人 ＞ FC
-    <span class="en">More effort required for independent owners</span>
-  </div>
-</div>
-
-<!-- ④ PROFIT -->
-<div class="card">
-  <div class="card-title">④ 収益性 / Profitability</div>
-
-  <div class="box">
-    <h3>個人 / Independent</h3>
-    <ul>
-      <li>ロイヤリティなし</li>
-      <li>利益は全額自分</li>
-      <li>月5万円以上の純利益は現実的</li>
-    </ul>
-    <span class="en">No royalty, higher net profit</span>
-  </div>
-
-  <div class="box">
-    <h3>FC / Franchise</h3>
-    <ul>
-      <li>ロイヤリティあり</li>
-      <li>利益率は低下</li>
-    </ul>
-    <span class="en">Royalty reduces profit margin</span>
-  </div>
-</div>
-
-<!-- ⑤ RISK -->
-<div class="card">
-  <div class="card-title">⑤ リスク / Risk</div>
-
-  <div class="box">
-    <h3>個人 / Independent</h3>
-    <ul>
-      <li>立地・設備選定ミス</li>
-      <li>判断リスク</li>
-    </ul>
-    <span class="en">Location & decision risk</span>
-  </div>
-
-  <div class="box">
-    <h3>FC / Franchise</h3>
-    <ul>
-      <li>契約制限</li>
-      <li>本部方針変更</li>
-    </ul>
-    <span class="en">Contract & policy risk</span>
-  </div>
-
-  <div class="note">
-    個人＝判断リスク / FC＝契約リスク
-    <span class="en">Decision risk vs contract risk</span>
-  </div>
-</div>
-
-<!-- ⑥–⑧ FINANCING -->
-<div class="card">
-  <div class="card-title">⑥〜⑧ 資金調達 / Financing</div>
-
-  <div class="box">
-    <h3>個人 / Independent</h3>
-    <ul>
-      <li>日本政策金融公庫</li>
-      <li>信用金庫・地方銀行</li>
-      <li>事業計画の完成度が重要</li>
-    </ul>
-    <span class="en">Business plan quality is critical</span>
-  </div>
-
-  <div class="box">
-    <h3>FC / Franchise</h3>
-    <ul>
-      <li>公庫＋FC提携金融機関</li>
-      <li>融資審査は通りやすい</li>
-    </ul>
-    <span class="en">Easier loan approval</span>
-  </div>
-
-  <div class="note">
-    FCは金融機関ウケが良い
-    <span class="en">Franchises are lender-friendly</span>
-  </div>
-</div>
-
-<!-- 5-YEAR ROI -->
-<div class="card">
-  <div class="card-title">📈 5年回収シミュレーション / 5-Year ROI Model</div>
-
-  <div class="box">
-    <ul>
-      <li>初期投資：2,500万円</li>
-      <li>月間純利益：5万円</li>
-    </ul>
-    <span class="en">
-      Initial investment: ¥25M / Monthly net profit: ¥50K
-    </span>
-  </div>
-
-  <div class="arrow">⬇</div>
-
-  <div class="box">
-    <ul>
-      <li>年間純利益：約60万円</li>
-      <li>5年間累計：約300万円</li>
-    </ul>
-    <span class="en">
-      Annual net profit: ¥600K / 5 years total: ¥3M
-    </span>
-  </div>
-
-  <div class="arrow">⬇</div>
-
-  <div class="note">
-    小規模・副業モデル → 追加出店で加速
-    <span class="en">
-      Small side-business model → scale up with multiple stores
-    </span>
-  </div>
-</div>
-
-</div>
-
-<!-- CONCLUSION -->
-<div class="footer">
-  <h2>💡 まとめ / Conclusion</h2>
-  <p>
-    利益重視・自分で動ける → <span>個人開業</span><br>
-    安心感・サポート重視 → <span>フランチャイズ</span>
-  </p>
-  <p class="en">
-    Independent for profit & control / Franchise for safety & support
-  </p>
-</div>
-
-</div>
 </body>
 </html>
