@@ -2,256 +2,288 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>大田区 コインランドリー事業 比較</title>
+<title>コインランドリー開業 比較ガイド</title>
+
 <style>
-body{
-  margin:0;
-  background:#f5f5f5;
-  font-family:"Hiragino Maru Gothic ProN","Arial Rounded MT Bold",sans-serif;
-  color:#222;
+body {
+  margin: 0;
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Arial Rounded MT Bold", sans-serif;
+  background: #f6f6f6;
+  color: #222;
 }
-.wrapper{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 40px;
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
 }
-header{
-  background:#111;
-  color:#fff;
-  padding:32px 0;
+
+/* ===== Common ===== */
+.section {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 40px;
+  box-shadow: 6px 6px 0 #ccc;
 }
-header h1{
-  margin:0;
-  font-size:28px;
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 20px;
 }
-header p{
-  margin-top:8px;
-  color:#ffd84d;
+
+.section-title span {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  opacity: 0.9;
 }
-.section{
-  padding:32px 0;
+
+/* ===== Balloon ===== */
+.balloon {
+  background: #ffe066;
+  border: 2px solid #000;
+  border-radius: 22px;
+  padding: 18px 22px;
+  margin: 20px 0;
 }
-.card{
-  background:#fff;
-  border:2px solid #111;
-  border-radius:18px;
-  padding:24px;
-  margin-bottom:24px;
-  box-shadow:4px 4px 0 #ccc;
+
+/* ===== Diagram ===== */
+.diagram {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
-.card h2{
-  margin:0 0 12px 0;
-  display:inline-block;
-  background:#111;
-  color:#fff;
-  padding:6px 14px;
-  border-radius:14px;
-  font-size:18px;
+
+.box {
+  border: 2px solid #000;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fafafa;
 }
-.sub{
-  font-size:14px;
-  color:#666;
-  margin-top:6px;
+
+/* ===== Compare ===== */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
 }
-.compare{
-  display:flex;
-  gap:24px;
-  margin-top:16px;
+
+.card {
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 22px;
 }
-.box{
-  flex:1;
-  border:2px dashed #999;
-  border-radius:14px;
-  padding:18px;
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
 }
-.yellow{
-  background:#fff6cc;
-  border-color:#f2c200;
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
 }
-.small{
-  font-size:14px;
+
+th {
+  background: #eee;
 }
-@media(max-width:900px){
-  .compare{flex-direction:column;}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 60px;
 }
-footer{
-  background:#eee;
-  padding:24px 0;
-  font-size:14px;
+
+@media (max-width: 800px) {
+  .compare {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
 
 <body>
-
-<header>
-  <div class="wrapper">
-    <h1>大田区 コインランドリー事業 比較</h1>
-    <p>Comparison of Individual Ownership and Franchise Models in Ota-ku, Tokyo</p>
-  </div>
-</header>
-
 <div class="wrapper">
 
-<section class="section">
-<div class="card">
-<h2>想定条件</h2>
-<p>
-立地：東京都大田区<br>
-店舗規模：約9坪（約30㎡）<br>
-形態：副業〜小規模投資／融資前提
-</p>
-<p class="sub">
-Assumptions: Location: Ota-ku, Tokyo / Store size: ~9 tsubo (~30 sqm) / Small-scale, loan-based investment
-</p>
+<!-- ===== Header ===== -->
+<div class="section">
+  <h1>
+    🏠 コインランドリー開業 比較ガイド<br>
+    <small>Coin Laundry Startup Visual Comparison Guide</small>
+  </h1>
+
+  <div class="balloon">
+    東京都大田区／小型店舗モデル<br>
+    Ota-ku Tokyo / Small-scale store model
+  </div>
 </div>
 
-<div class="card">
-<h2>店舗サイズの根拠</h2>
-<p>
-洗濯乾燥機（大型）2台（Large washer-dryer units）<br>
-洗濯機（中型）4台（Medium washers）<br>
-乾燥機 8台（Dryers）<br>
-両替機（Change machine）<br>
-作業台（Folding table）<br>
-ベンチ（Bench seating）
-</p>
-<p>
-→ 設備＋通路を含めて <strong>約9坪（約30㎡）</strong>
-</p>
-<p class="sub">
-This equipment layout realistically fits within ~30 sqm including walkways
-</p>
+<!-- ===== Store Size ===== -->
+<div class="section">
+  <div class="section-title">
+    📐 想定する店舗サイズ
+    <span>Assumed Store Size</span>
+  </div>
+
+  <div class="diagram">
+    <div class="box">
+      🧺 <strong>設備 / Equipment</strong>
+      <ul>
+        <li>大型洗濯乾燥機 ×2<br>Large Washer-Dryer ×2</li>
+        <li>中型洗濯機 ×4<br>Medium Washer ×4</li>
+        <li>乾燥機 ×8<br>Dryer ×8</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      🪑 <strong>付帯設備 / Accessories</strong>
+      <ul>
+        <li>両替機 / Change Machine</li>
+        <li>作業台 / Folding Table</li>
+        <li>ベンチ / Bench</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      📏 <strong>必要面積 / Area</strong>
+      <p>
+        約12〜14坪<br>
+        約40〜46㎡
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="card">
-<h2>① 初期投資額</h2>
-<div class="compare">
-<div class="box yellow">
-<strong>個人開業（Individual Ownership）</strong><br>
-約2,200万〜3,200万円<br>
-<span class="small">No royalty / Flexible equipment selection</span>
-</div>
-<div class="box">
-<strong>フランチャイズ（Franchise）</strong><br>
-約2,700万〜3,700万円<br>
-<span class="small">Franchise fee + designated equipment</span>
-</div>
-</div>
+<!-- ===== Reason ===== -->
+<div class="section">
+  <div class="section-title">
+    🧠 サイズ設定の根拠
+    <span>Reasoning</span>
+  </div>
+
+  <ul>
+    <li>通路幅と安全性 / Aisle width & safety</li>
+    <li>利用者の動線 / Customer flow</li>
+    <li>清掃・保守効率 / Maintenance efficiency</li>
+  </ul>
 </div>
 
-<div class="card">
-<h2>② 初期投資額の内訳</h2>
-<div class="compare">
-<div class="box yellow">
-洗濯・乾燥機器（Laundry equipment）<br>
-内装工事（Interior construction）<br>
-給排水・電気工事（Plumbing & electrical work）<br>
-両替機（Change machine）<br>
-防犯設備（Security system）
-</div>
-<div class="box">
-上記すべて＋<br>
-加盟金（Franchise fee）<br>
-指定設計（Designated layout）<br>
-指定機器（Designated machines）
-</div>
-</div>
+<!-- ===== Compare ===== -->
+<div class="section">
+  <div class="section-title">
+    ⚖️ 開業形態の比較
+    <span>Business Model Comparison</span>
+  </div>
+
+  <div class="compare">
+    <div class="card">
+      👤 <strong>個人開業 / Independent</strong>
+      <ul>
+        <li>初期費用を抑えやすい<br>Lower initial cost</li>
+        <li>自由度が高い<br>High flexibility</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      🏢 <strong>フランチャイズ / Franchise</strong>
+      <ul>
+        <li>運営サポートあり<br>Operational support</li>
+        <li>ロイヤリティ負担<br>Royalty payments</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div class="card">
-<h2>③ 運営の手間</h2>
-<div class="compare">
-<div class="box yellow">
-清掃・集金・判断すべて自己対応<br>
-（Cleaning, cash collection, decision-making）
-</div>
-<div class="box">
-マニュアル・サポートあり<br>
-（Operational manuals & support desk）
-</div>
-</div>
+<!-- ===== Investment ===== -->
+<div class="section">
+  <div class="section-title">
+    💰 初期投資の目安
+    <span>Initial Investment</span>
+  </div>
+
+  <table>
+    <tr>
+      <th>項目 / Item</th>
+      <th>金額目安 / Estimate</th>
+    </tr>
+    <tr>
+      <td>機械設備 / Equipment</td>
+      <td>1,200〜1,500万円</td>
+    </tr>
+    <tr>
+      <td>内装・工事 / Interior & Utilities</td>
+      <td>300〜500万円</td>
+    </tr>
+    <tr>
+      <td>その他 / Others</td>
+      <td>200〜300万円</td>
+    </tr>
+  </table>
 </div>
 
-<div class="card">
-<h2>④ 収益性</h2>
-<div class="compare">
-<div class="box yellow">
-ロイヤリティなし<br>
-利益は全額自分<br>
-（No royalty / All profit retained）
-</div>
-<div class="box">
-ロイヤリティ支払いあり<br>
-利益率は低下<br>
-（Royalty reduces net margin）
-</div>
-</div>
+<!-- ===== Rent ===== -->
+<div class="section">
+  <div class="section-title">
+    🏢 想定家賃（大田区）
+    <span>Estimated Rent (Ota-ku)</span>
+  </div>
+
+  <div class="balloon">
+    月額 約20〜30万円<br>
+    Monthly ¥200,000 – ¥300,000
+  </div>
 </div>
 
-<div class="card">
-<h2>⑤ リスク</h2>
-<div class="compare">
-<div class="box yellow">
-立地・設備・判断ミスのリスク<br>
-（Decision-making risk）
-</div>
-<div class="box">
-契約縛り・方針変更リスク<br>
-（Contractual risk）
-</div>
-</div>
+<!-- ===== Financing ===== -->
+<div class="section">
+  <div class="section-title">
+    🏦 融資の現実性
+    <span>Financing Feasibility</span>
+  </div>
+
+  <ul>
+    <li>日本政策金融公庫が中心 / Japan Finance Corporation</li>
+    <li>FCはモデル評価で通りやすい傾向</li>
+  </ul>
 </div>
 
-<div class="card">
-<h2>⑥〜⑧ 資金調達</h2>
-<div class="compare">
-<div class="box yellow">
-日本政策金融公庫<br>
-信用金庫<br>
-事業計画の完成度が重要<br>
-（Business plan quality matters）
-</div>
-<div class="box">
-公庫＋FC提携金融機関<br>
-融資通過率は高め<br>
-（Higher approval likelihood）
-</div>
-</div>
-</div>
+<!-- ===== Summary ===== -->
+<div class="section">
+  <div class="section-title">
+    🧭 まとめ
+    <span>Conclusion</span>
+  </div>
 
-<div class="card">
-<h2>⑨ 5年回収シミュレーション</h2>
-<p>
-初期投資：約2,500万円<br>
-月間純利益：約5万円<br>
-年間：約60万円<br>
-5年累計：約300万円
-</p>
-<p class="sub">
-Conservative single-store payback simulation over 5 years
-</p>
-</div>
-
-<div class="card yellow">
-<h2>まとめ</h2>
-<p>
-利益重視・自由度 → 個人開業<br>
-安心感・融資通過率 → フランチャイズ
-</p>
-<p class="sub">
-Choose independence for profit, franchise for stability
-</p>
-</div>
-
-</section>
+  <div class="diagram">
+    <div class="box">
+      💡 コスト重視 → 個人開業<br>
+      Cost-focused → Independent
+    </div>
+    <div class="box">
+      🛟 安心重視 → フランチャイズ<br>
+      Support-focused → Franchise
+    </div>
+  </div>
 </div>
 
 <footer>
-<div class="wrapper">
-公開URL：https://28yu.github.io/coin/
-</div>
+© Coin Laundry Visual Comparison Guide
 </footer>
 
+</div>
 </body>
 </html>
